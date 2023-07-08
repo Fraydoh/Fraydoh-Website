@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Background Example</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+  <script src="background.js"></script>
+</head>
+<body>
+  <!-- Your website content goes here -->
+</body>
+<head>
+    <title>So no head?</title>
+</head>
+<body style="background-color:black;">
+    <h1 style="font-size:125px; color: rgb(255, 255, 255); text-align:center; text-shadow: 0 0 50px rgba(255, 255, 255, 0.6);">FRAYDOH</h1>
+    <head>
+        <title>Date</title>
+        <style>
+          #date {
+            font-size: 24px;
+            text-align: center;
+            color:white;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+          }
+        </style>
+      </head>
+      <body>
+        <h1></h1>
+        <div id="date"></div>
+      
+        <script>
+          setInterval(() => {
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString('en-US', {
+              weekday: 'long',
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            });
+            document.getElementById('date').textContent = formattedDate;
+          }, 1000);
+        </script>
+      </body>
+        <div class="container">
+            <h1 style="color:white; text-align:center; text-shadow: 0 0 20px rgba(255, 255, 255, 0.6);" id="current-time" ></h1>
+            </div>
+        </div>
+    <hr>
+    <h1 style="font-size:50px; color: white; text-align:center; text-shadow: 0 0 20px rgba(255, 255, 255, 0.7)">Rocket League</h1>
+    <p style=" text-align: center;">
+    <a style="color:darkcyan; text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);" href="https://rocketleague.tracker.network/rocket-league/profile/epic/IFreddoI/overview">Alice in Bundaland</a> <a style="color:darkcyan; text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);" href="https://rocketleague.tracker.network/rocket-league/profile/epic/Fraydoh./overview">Fraydoh.</a> 
+    </p>
+    <hr>
+    <h1 style="font-size:50px; color: white; text-align:center; text-shadow: 0 0 20px rgba(255, 255, 255, 0.7)">Rainbow Six: Siege</h1>
+    <p style=" text-align: center;">
+    <a style="color:darkcyan; text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);" href="https://r6.tracker.network/profile/pc/Fraydoh./">Fraydoh.</a> <a style="color:darkcyan; text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);" href="https://r6.tracker.network/profile/pc/Fraydoh.BMT">Fraydoh.BMT</a> <a style="color: darkcyan; text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);" href="https://r6.tracker.network/profile/pc/Fraydoh.KMT">Fraydoh.KMT</a>
+    </p>
+    
+<script>
+    let time = document.getElementById("current-time")
+
+    setInterval(() =>{
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+    },1000)
+
+</script>
+    <script>
+      setInterval(() => {
+        const currentDate = new Date();
+        const formattedDate = currentDate.toLocaleDateString('en-US', {
+          weekday: 'long',
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+        document.getElementById('date').textContent = formattedDate;
+      }, 1000);
+    </script>
+  </body>
+</body>
+</html>
